@@ -12,6 +12,11 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        inter: ['var(--font-inter)', 'sans-serif'],
+        raleway: ['var(--font-raleway)', 'sans-serif'],
+        charm: ['var(--font-charm)', 'cursive'],
+      }
     },
   },
   plugins: [],
