@@ -50,11 +50,11 @@ export const OfertaCard = ({
   return (
     <div ref={container} className={`card-container h-[100vh] flex justify-center items-center sticky top-40 font-raleway`}>
       <motion.div
-        className={`card w-[350px] lg:w-[1200px] h-[650px] lg:h-[550px] relative top-0 rounded-2xl ${colorClasses[color]}`}
+        className={`card w-[350px] lg:w-[1200px] h-[550px] lg:h-[550px] relative top-0 rounded-2xl ${colorClasses[color]}`}
         style={{ top: `calc(-15% + ${i * 26}px)`, scale: cardScale }}
       >
         <motion.div className="flex flex-col justify-around items-center text-slate-100 font-bold h-full">
-          <div className={`text-5xl mx-3 mt-3 flex justify-center flex-shrink-0 ${bgcolor} max-w-[97%] w-full rounded-md shadow-md`}>
+          <div className={`text-3xl lg:text-5xl mx-3 mt-3 flex justify-center flex-shrink-0 ${bgcolor} max-w-[88%] lg:max-w-[97%] w-full rounded-md shadow-md`}>
             <p className="py-2">
               {title}
             </p>
@@ -62,8 +62,8 @@ export const OfertaCard = ({
           {/*CONTENEDOR DE LAS DIVISIONES*/}
           <div className="flex flex-col lg:flex-row justify-center items-center row w-full h-full overflow-hidden">
             {/*CONTENEDOR DE TEXTO*/}
-            <div className="w-full lg:w-1/2 h-3/4 lg:h-full p-5 flex">
-              <div className={`text-xs lg:text-base p-5 flex flex-col justify-start items-center ${bgcolor} w-full h-full rounded-md gap-3 lg:gap-5 shadow-md`}>
+            <div className="w-full lg:w-1/2 h-5/6 lg:h-full p-5 flex">
+              <div className={`text-xs lg:text-base p-5 flex flex-col justify-start items-center ${bgcolor} w-full h-full rounded-md gap-1 lg:gap-5 shadow-md`}>
                 <p className="text-justify leading-relaxed">
                   {description}
                 </p>
@@ -82,13 +82,13 @@ export const OfertaCard = ({
                 <div className="self-start">
 
                   <AnimatedLink url={link}>
-                    <span className="text-white text-base lg:text-lg self-end">ver más</span>
+                    <span className="text-white text-base lg:text-lg">ver más</span>
                   </AnimatedLink>
                 </div>
               </div>
             </div>
             {/*CONTENEDOR DE IMAGEN*/}
-            <div className="w-full lg:w-1/2 h-full flex p-5 justify-center items-center relative overflow-hidden">
+            <div className="w-full lg:w-1/2 h-full flex px-5 pb-5 lg:p-5 justify-center items-center relative overflow-hidden">
               <motion.div className="w-full h-full overflow-hidden rounded-md">
                 <motion.img
                   className="content-start shadow-md"

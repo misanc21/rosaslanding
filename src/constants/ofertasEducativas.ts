@@ -41,7 +41,7 @@ export const OFERTAS: OfertaCardProps[] = [
   {
     id: "2",
     title: "Secundaria",
-    description: "Espacio donde los jóvenes consolidan su identidad, potencian sus talentos y se preparan para enfrentar los retos del mundo actual. Con un enfoque en la excelencia académica, el desarrollo de habilidades socioemocionales y la formación en valores, se convertirán en ciudadanos globales, críticos y comprometidos con su entorno.",
+    description: "Espacio donde los jóvenes consolidan su identidad, potencian sus talentos y se preparan para enfrentar los retos del mundo actual. Con un enfoque en la excelencia académica, se convertirán en ciudadanos globales, críticos y comprometidos con su entorno.",
     puntos: [
       "Programa académico que incluye ciencias, matemáticas, humanidades y tecnología.",
       "Formación en liderazgo, trabajo en equipo y responsabilidad social.",
