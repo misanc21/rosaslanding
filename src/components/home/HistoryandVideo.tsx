@@ -25,7 +25,7 @@ export const HistoryAndVideo = () => {
                   height={60}
                   alt='logo'
                   placeholder='blur'
-                  className="w-auto h-auto max-w-[60px] sm:max-w-[80px] md:max-w-[100px] lg:max-w-[120px]"
+                  className="w-auto h-auto max-w-[50px] sm:max-w-[80px] md:max-w-[100px] lg:max-w-[120px]"
                 />
               </div>
               <p className="w-full lg:w-3/4italic text-center text-base lg:text-lg mt-5 text-pretty">

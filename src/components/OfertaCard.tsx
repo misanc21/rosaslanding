@@ -63,14 +63,14 @@ export const OfertaCard = ({
           <div className="flex flex-col-reverse lg:flex-row justify-center items-center row w-full h-full overflow-hidden">
             {/*CONTENEDOR DE TEXTO*/}
             <div className="w-full lg:w-1/2 h-5/6 lg:h-full p-5 flex">
-              <div className={`text-xs lg:text-base p-5 flex flex-col justify-start items-center ${bgcolor} w-full h-full rounded-md gap-1 lg:gap-5 shadow-md`}>
-                <p className="text-justify leading-relaxed">
+              <div className={`text-md lg:text-base p-5 flex flex-col justify-start items-center ${bgcolor} w-full h-full rounded-md gap-1 lg:gap-5 shadow-md`}>
+                <p className="text-center leading-relaxed">
                   {description}
                 </p>
-                <span className="text-base lg:text-lg self-start">
+                <span className="text-base lg:text-lg self-start hidden lg:inline-block">
                   Ofrecemos:
                 </span>
-                <div>
+                <div className='hidden lg:inline-block'>
                   <ol className="list-decimal space-y-1 pl-5">
                     {
                       puntos.map((item, index) => {
@@ -79,7 +79,7 @@ export const OfertaCard = ({
                     }
                   </ol>
                 </div>
-                <div className="self-start">
+                <div className="self-center lg:self-start">
 
                   <AnimatedLink url={link}>
                     <span className="text-white text-base lg:text-lg">ver más</span>
