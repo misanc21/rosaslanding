@@ -7,7 +7,6 @@ import img4 from '../../../public/img4.jpg'
 import img5 from '../../../public/img5.jpg'
 import { useScroll, useTransform, motion } from 'motion/react'
 import { useRef } from 'react'
-import GradientText from '../motion/GradientText';
 
 export const StoreGallery = () => {
   const container = useRef(null);
@@ -16,7 +15,6 @@ export const StoreGallery = () => {
     offset: ['start start', 'end end'],
   })
   const scale4 = useTransform(scrollYProgress, [0, 1], [1, 4]);
-  const scale5 = useTransform(scrollYProgress, [0, 1], [1, 5]);
   const scale6 = useTransform(scrollYProgress, [0, 1], [1, 6]);
   const scale7 = useTransform(scrollYProgress, [0, 1], [1, 7]);
   const scale8 = useTransform(scrollYProgress, [0, 1], [1, 8]);
@@ -28,28 +26,28 @@ export const StoreGallery = () => {
   const imgArray = [
     {
       src: img1,
-      scale: scale4,
-      position: 'w-1/6 h-1/6 -top-[30vh] left-[0vw]'
+      scale: scale6,
+      position: 'w-1/4 h-1/4 -top-[25vh] left-[0vw]'
     },
     {
       src: img2,
-      scale: scale5,
-      position: 'w-1/2 h-1/2 -top-[15vh] left-[27vw]'
+      scale: scale6,
+      position: 'w-2/4 sm:w-1/4 h-2/4 -top-[12vh] left-[40vw] sm:left-[26vw]'
     },
     {
       src: img3,
       scale: scale7,
-      position: 'w-1/3 h-1/3 top-[30vh] left-[22vw]'
+      position: 'w-2/4 sm:w-1/4 h-2/4 -top-[12vh] -left-[40vw] sm:-left-[26vw]'
     },
     {
       src: img4,
       scale: scale8,
-      position: 'w-1/4 h-1/4 top-[30vh] -left-[7vw]'
+      position: 'w-3/4 sm:w-2/4 h-1/4 top-[28vh] -left-[29vw] sm:-left-[13vw]'
     },
     {
       src: img5,
       scale: scale9,
-      position: 'w-1/2 h-1/2 top-[30vh] -left-[35vw]'
+      position: 'w-2/4 sm:w-1/4 h-1/4 top-[28vh] left-[37vw] sm:left-[26vw]'
     },
   ]
 
@@ -71,12 +69,12 @@ export const StoreGallery = () => {
           <motion.div
             className='w-1/4 h-1/4 top-[0vh] left-[0vw] text-raleway font-bold text-center mt-8 bg-cover bg-center bg-no-repeat rounded-md'
             style={{
-              backgroundImage: "url('/principal.png')",
+              backgroundImage: "url('/principal.jpg')",
               opacity: opacityImg
             }}
           >
           </motion.div>
-          <motion.div className="w-1/4 absolute flex justify-center items-center text-blue-950 h-full text-4xl text-center font-bold font-raleway" style={{ opacity }}>
+          <motion.div className="w-1/4 absolute flex justify-center items-center text-blue-950 h-full text-base sm:text-4xl text-center font-bold font-raleway" style={{ opacity }}>
             70 Años formando a los Líderes del mañana
           </motion.div>
         </motion.div>

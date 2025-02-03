@@ -1,9 +1,24 @@
+'use client'
 import TransitionElement from "@/components/motion/TransitionElement";
+import { motion, useScroll, useTransform } from "motion/react";
 import Image from 'next/image';
+import { useRef } from "react";
 
 export const WelcomePage = () => {
+  const ref = useRef(null)
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  })
+  const opacity = useTransform(scrollYProgress, [0, 0.5, 0.8], [0, 1, 0])
   return (
-    <div className="w-full h-screen flex justify-center items-center">
+    <motion.div
+      ref={ref}
+      className="w-full h-screen flex justify-center items-center"
+      style={{
+        opacity,
+      }}
+    >
       <TransitionElement>
         <div className="flex flex-col-reverse lg:flex-row justify-center items-center w-full">
           <div className="flex flex-col justify-start text-center lg:w-full">
@@ -14,7 +29,7 @@ export const WelcomePage = () => {
               LAS ROSAS
             </span>
             <span className="font-charm text-2xl lg:text-5xl text-yellow-700 font-bold">
-              "Todo por Dios y en todo Caridad."
+              {`"Todo por Dios y en todo Caridad."`}
             </span>
             <span className="mt-3 lg:mt-10 font-bold text-blue-950 font-raleway text-sm lg:text-xl">
               Preescolar - Primaria - Secundaria
@@ -33,6 +48,6 @@ export const WelcomePage = () => {
           </div>
         </div>
       </TransitionElement>
-    </div>
+    </motion.div>
   )
 }
