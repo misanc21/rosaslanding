@@ -17,13 +17,13 @@ export const OfertaEducativa = () => {
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.7, 0.71], [0, 1, 1, 0])
   const TranslateY = useTransform(scrollYProgress, [0.7, 0.8], ["0%", "-100%"]);
   return (
-    <div className="w-full h-auto mt-[25vh] mb-[100vh] flex justify-center flex-col items-center">
+    <div className="w-full h-auto mt-[15vh] mb-[100vh] flex justify-center flex-col items-center">
       <motion.h2
         style={{
           opacity,
           y: TranslateY
         }}
-        className='text-center text-3xl md:text-5xl lg:text-7xl font-raleway font-bold text-blue-950 sticky top-20 h-[45vh]'>
+        className='text-center text-3xl md:text-5xl lg:text-7xl font-raleway font-bold text-blue-950 sticky top-24 h-[25vh]'>
         Nuestros niveles educativos
       </motion.h2>
       <div ref={ref}>

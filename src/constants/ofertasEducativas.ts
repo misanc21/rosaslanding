@@ -13,7 +13,7 @@ export const OFERTAS: OfertaCardProps[] = [
   {
     id: "0",
     title: "Preescolar",
-    description: "Las niñas y niños darán sus primeros pasos en un mundo lleno de descubrimientos y alegría. fomentamos su curiosidad natural, creatividad y habilidades sociales. Nuestro programa está diseñado para que los pequeños aprendan en un ambiente seguro y estimulante.",
+    description: "Fomentamos su curiosidad natural, creatividad y habilidades sociales. Nuestro programa está diseñado para que los pequeños aprendan en un ambiente seguro y estimulante.",
     puntos: [
       "Desarrollo integral: cognitivo, emocional, social y físico.",
       "Espacios seguros y adaptados a sus necesidades.",
@@ -27,9 +27,8 @@ export const OFERTAS: OfertaCardProps[] = [
   {
     id: "1",
     title: "Primaria",
-    description: "Acompañamos a los estudiantes en una etapa clave de su desarrollo académico y personal. Con un enfoque innovador y centrado en el estudiante, fomentamos el amor por el aprendizaje, el pensamiento crítico y la autonomía.",
+    description: "Acompañamos a los estudiantes en una etapa clave de su desarrollo académico y personal. Fomentamos el amor por el aprendizaje, el pensamiento crítico y la autonomía.",
     puntos: [
-      "Educación personalizada que respeta el ritmo de aprendizaje de cada niño.",
       "Desarrollo de habilidades digitales y pensamiento lógico-matemático.",
       "Promoción de valores como la responsabilidad, la honestidad y el respeto.",
     ],
@@ -41,9 +40,8 @@ export const OFERTAS: OfertaCardProps[] = [
   {
     id: "2",
     title: "Secundaria",
-    description: "Espacio donde los jóvenes consolidan su identidad, potencian sus talentos y se preparan para enfrentar los retos del mundo actual. Con un enfoque en la excelencia académica, se convertirán en ciudadanos globales, críticos y comprometidos con su entorno.",
+    description: "Espacio donde los jóvenes consolidan su identidad y potencian sus talentos. Con enfoque en la excelencia académica, se convertirán en ciudadanos críticos y comprometidos con su entorno.",
     puntos: [
-      "Programa académico que incluye ciencias, matemáticas, humanidades y tecnología.",
       "Formación en liderazgo, trabajo en equipo y responsabilidad social.",
       "Actividades extracurriculares como deportes, arte y tecnologías.",
     ],

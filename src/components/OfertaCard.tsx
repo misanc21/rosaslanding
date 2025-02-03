@@ -50,7 +50,7 @@ export const OfertaCard = ({
   return (
     <div ref={container} className={`card-container h-[100vh] flex justify-center items-center sticky top-40 font-raleway`}>
       <motion.div
-        className={`card w-[350px] lg:w-[1200px] h-[550px] lg:h-[550px] relative top-0 rounded-2xl ${colorClasses[color]}`}
+        className={`card w-[380px] lg:w-[1000px] h-[550px] lg:h-[500px] relative top-0 rounded-2xl ${colorClasses[color]}`}
         style={{ top: `calc(-15% + ${i * 26}px)`, scale: cardScale }}
       >
         <motion.div className="flex flex-col justify-around items-center text-slate-100 font-bold h-full">
@@ -60,7 +60,7 @@ export const OfertaCard = ({
             </p>
           </div>
           {/*CONTENEDOR DE LAS DIVISIONES*/}
-          <div className="flex flex-col lg:flex-row justify-center items-center row w-full h-full overflow-hidden">
+          <div className="flex flex-col-reverse lg:flex-row justify-center items-center row w-full h-full overflow-hidden">
             {/*CONTENEDOR DE TEXTO*/}
             <div className="w-full lg:w-1/2 h-5/6 lg:h-full p-5 flex">
               <div className={`text-xs lg:text-base p-5 flex flex-col justify-start items-center ${bgcolor} w-full h-full rounded-md gap-1 lg:gap-5 shadow-md`}>
@@ -88,7 +88,7 @@ export const OfertaCard = ({
               </div>
             </div>
             {/*CONTENEDOR DE IMAGEN*/}
-            <div className="w-full lg:w-1/2 h-full flex px-5 pb-5 lg:p-5 justify-center items-center relative overflow-hidden">
+            <div className="w-full lg:w-1/2 h-full flex px-5 pt-5 lg:p-5 justify-center items-center relative overflow-hidden">
               <motion.div className="w-full h-full overflow-hidden rounded-md">
                 <motion.img
                   className="content-start shadow-md"
