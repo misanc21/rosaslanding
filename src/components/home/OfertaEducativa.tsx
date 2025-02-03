@@ -23,7 +23,7 @@ export const OfertaEducativa = () => {
           opacity,
           y: TranslateY
         }}
-        className='text-center text-3xl md:text-5xl lg:text-7xl font-raleway font-bold text-blue-950 sticky top-24 h-[25vh]'>
+        className='text-center text-3xl md:text-5xl lg:text-7xl font-raleway font-bold text-blue-950 sticky top-14 lg:top-20 h-[25vh]'>
         Nuestros niveles educativos
       </motion.h2>
       <div ref={ref}>

@@ -11,7 +11,7 @@ export const HistoryAndVideo = () => {
         <div className="flex-col-reverse lg:flex-row w-full mb-10 flex justify-center items-center font-raleway text-gray-900 p-5 gap-5 pt-2 lg:pt-5">
           {/*DIV DE TEXTO*/}
           <div className="w-full lg:w-1/2 flex-1 flex flex-col justify-center items-center">
-            <div className="p-5 h-[48vh] lg:h-[50vh] bg-slate-300 flex flex-col justify-center items-center rounded-xl">
+            <div className="p-5 h-[55vh] lg:h-[50vh] bg-slate-300 flex flex-col justify-center items-center rounded-xl">
               <h2 className="text-xl lg:text-3xl font-bold text-center text-gray-900">
                 Formando corazones y mentes con fé, conocimiento y valores
               </h2>

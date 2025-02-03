@@ -50,7 +50,7 @@ export const OfertaCard = ({
   return (
     <div ref={container} className={`card-container h-[100vh] flex justify-center items-center sticky top-40 font-raleway`}>
       <motion.div
-        className={`card w-[380px] lg:w-[1000px] h-[550px] lg:h-[500px] relative top-0 rounded-2xl ${colorClasses[color]}`}
+        className={`card w-[320px] lg:w-[1000px] h-[550px] lg:h-[500px] relative top-0 rounded-2xl ${colorClasses[color]}`}
         style={{ top: `calc(-15% + ${i * 26}px)`, scale: cardScale }}
       >
         <motion.div className="flex flex-col justify-around items-center text-slate-100 font-bold h-full">
