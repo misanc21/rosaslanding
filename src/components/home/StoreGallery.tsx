@@ -7,6 +7,7 @@ import img4 from '../../../public/img4.jpg'
 import img5 from '../../../public/img5.jpg'
 import { useScroll, useTransform, motion } from 'motion/react'
 import { useRef } from 'react'
+import GradientText from '../motion/GradientText';
 
 export const StoreGallery = () => {
   const container = useRef(null);
@@ -21,31 +22,34 @@ export const StoreGallery = () => {
   const scale8 = useTransform(scrollYProgress, [0, 1], [1, 8]);
   const scale9 = useTransform(scrollYProgress, [0, 1], [1, 9]);
 
+  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 1]);
+  const opacityImg = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.5, 0]);
+
   const imgArray = [
     {
       src: img1,
-      scale: scale5,
-      position: 'w-1/4 h-1/4 top-[50vh] left-[50vw]'
+      scale: scale4,
+      position: 'w-1/6 h-1/6 -top-[30vh] left-[0vw]'
     },
     {
       src: img2,
-      scale: scale6,
-      position: 'w-1/2 h-full -top-72 -left-1/3'
+      scale: scale5,
+      position: 'w-1/2 h-1/2 -top-[15vh] left-[27vw]'
     },
     {
       src: img3,
       scale: scale7,
-      position: 'w-1/3 h-full -top-72 left-1/4'
+      position: 'w-1/3 h-1/3 top-[30vh] left-[22vw]'
     },
     {
       src: img4,
       scale: scale8,
-      position: 'w-1/5 h-full top-10 left-1/4'
+      position: 'w-1/4 h-1/4 top-[30vh] -left-[7vw]'
     },
     {
       src: img5,
       scale: scale9,
-      position: 'w-1/5 h-40 top-[30vh] left-[30vw]'
+      position: 'w-1/2 h-1/2 top-[30vh] -left-[35vw]'
     },
   ]
 
@@ -64,9 +68,17 @@ export const StoreGallery = () => {
           className='w-full h-full absolute top-0 flex justify-center items-center'
           style={{ scale: scale4 }}
         >
-          <div className='w-1/4 h-1/4 top-[0vh] left-[0vw] border-red-500 border-2 text-raleway font-bold text-5xl text-center mt-12'>
-            Guiando a los lideres del mañana
-          </div>
+          <motion.div
+            className='w-1/4 h-1/4 top-[0vh] left-[0vw] text-raleway font-bold text-center mt-8 bg-cover bg-center bg-no-repeat rounded-md'
+            style={{
+              backgroundImage: "url('/principal.png')",
+              opacity: opacityImg
+            }}
+          >
+          </motion.div>
+          <motion.div className="w-1/4 absolute flex justify-center items-center text-blue-950 h-full text-4xl text-center font-bold font-raleway" style={{ opacity }}>
+            70 Años formando a los Líderes del mañana
+          </motion.div>
         </motion.div>
         {
           imgArray.map(({ src, scale, position }, index) => {
@@ -76,9 +88,7 @@ export const StoreGallery = () => {
                 className='w-full h-full absolute top-0 flex justify-center items-center'
                 style={{ scale }}
               >
-                <motion.div className={`w-1/4 h-1/4 relative rounded ${position}`}
-
-                >
+                <motion.div className={`w-1/4 h-1/4 relative rounded ${position}`} >
                   <Image
                     src={src}
                     fill

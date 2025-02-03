@@ -1,7 +1,12 @@
+import { StoreGallery } from "@/components/home/StoreGallery";
+
 export default function Aboutpage() {
   return (
-    <div>
-      About Page
-    </div>
+    <>
+      <StoreGallery />
+      <div className="h-screen">
+        djhbdhjbdhjbd
+      </div>
+    </>
   )
 }

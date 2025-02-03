@@ -45,7 +45,7 @@ export default function RootLayout({
         className={`${interFont.variable} ${raleway.variable} ${charm.variable} antialiased`}
       >
         <Header />
-        <main className="z-10 mt-14 sm:mt-20">
+        <main className="z-10">
           {children}
         </main>
       </body>
