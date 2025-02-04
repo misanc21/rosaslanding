@@ -48,7 +48,7 @@ export const OfertaCard = ({
   const scale = useTransform(scrollYProgress, [0, 1], [2, 1]);
   const cardScale = useTransform(progress, range, [1, targetScale]);
   return (
-    <div ref={container} className={`card-container h-[100vh] flex justify-center items-center sticky top-40 font-raleway`}>
+    <div ref={container} className={`card-container h-[100vh] flex justify-center items-center sticky top-28 font-raleway`}>
       <motion.div
         className={`z-50 card w-[320px] lg:w-[1000px] h-[450px] lg:h-[500px] relative top-0 rounded-2xl ${colorClasses[color]}`}
         style={{ top: `calc(-15% + ${i * 60}px)`, scale: cardScale }}
@@ -68,7 +68,7 @@ export const OfertaCard = ({
             {/*CONTENEDOR DE TEXTO*/}
             <div className="w-full lg:w-1/2 h-4/6 lg:h-full p-5 flex">
               <div className={`text-sm lg:text-base p-1 lg:p-5 flex flex-col justify-center lg:justify-start items-center ${bgcolor} w-full h-full rounded-md gap-1 lg:gap-5 shadow-md`}>
-                <p className="text-center leading-relaxed">
+                <p className="text-center lg:text-left leading-relaxed">
                   {description}
                 </p>
                 <span className="text-base lg:text-lg self-start hidden lg:inline-block">
