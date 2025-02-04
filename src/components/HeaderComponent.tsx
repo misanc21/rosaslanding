@@ -2,13 +2,27 @@
 import Image from "next/image";
 import AnimatedLink from "./motion/AnimatedLink";
 import ContactButton from "./motion/ContactButton";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MenuHeaderMobile } from "./MenuHeaderMobile";
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const [opacity, setOpacity] = useState<string | null>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const newOpacity = scrollY > 50 ? 'bg-opacity-90' : '';
+      setOpacity(newOpacity);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className='bg-blue-950 p-2 flex justify-between items-center fixed top-0 left-0 w-full z-50 px-3'>
+    <header className={`bg-blue-950 p-2 flex justify-between items-center fixed top-0 left-0 w-full z-50 px-3 transition-all duration-300 ${opacity}`}>
       <div className='hidden md:flex gap-8 justify-center items-center'>
         <AnimatedLink url={"/"} >
           <Image src={"/las-rosas-logo.png"} alt="Logo" width={60} height={60} />
