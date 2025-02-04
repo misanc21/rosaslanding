@@ -50,7 +50,7 @@ export const OfertaCard = ({
   return (
     <div ref={container} className={`card-container h-[100vh] flex justify-center items-center sticky top-40 font-raleway`}>
       <motion.div
-        className={`z-50 card w-[320px] lg:w-[1000px] h-[550px] lg:h-[500px] relative top-0 rounded-2xl ${colorClasses[color]}`}
+        className={`z-50 card w-[320px] lg:w-[1000px] h-[450px] lg:h-[500px] relative top-0 rounded-2xl ${colorClasses[color]}`}
         style={{ top: `calc(-15% + ${i * 60}px)`, scale: cardScale }}
         initial={{ opacity: 1, y: 50, scale: 0.2 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -64,10 +64,10 @@ export const OfertaCard = ({
             </p>
           </div>
           {/*CONTENEDOR DE LAS DIVISIONES*/}
-          <div className="flex flex-col-reverse lg:flex-row justify-center items-center row w-full h-full overflow-hidden">
+          <div className="flex flex-col-reverse lg:flex-row justify-end lg:justify-center items-center row w-full h-full overflow-hidden">
             {/*CONTENEDOR DE TEXTO*/}
-            <div className="w-full lg:w-1/2 h-5/6 lg:h-full p-5 flex">
-              <div className={`text-md lg:text-base p-5 flex flex-col justify-start items-center ${bgcolor} w-full h-full rounded-md gap-1 lg:gap-5 shadow-md`}>
+            <div className="w-full lg:w-1/2 h-4/6 lg:h-full p-5 flex">
+              <div className={`text-sm lg:text-base p-1 lg:p-5 flex flex-col justify-center lg:justify-start items-center ${bgcolor} w-full h-full rounded-md gap-1 lg:gap-5 shadow-md`}>
                 <p className="text-center leading-relaxed">
                   {description}
                 </p>
@@ -92,7 +92,7 @@ export const OfertaCard = ({
               </div>
             </div>
             {/*CONTENEDOR DE IMAGEN*/}
-            <div className="w-full lg:w-1/2 h-full flex px-5 pt-5 lg:p-5 justify-center items-center relative overflow-hidden">
+            <div className="w-full lg:w-1/2 h-[20vh] lg:h-full flex px-5 pt-5 lg:p-5 justify-center items-center relative overflow-hidden">
               <motion.div className="w-full h-full overflow-hidden rounded-md">
                 <motion.img
                   className="content-start shadow-md"
@@ -100,7 +100,7 @@ export const OfertaCard = ({
                   alt="nivel"
                   width={500}
                   height={500}
-                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 30vw, (max-width: 1200px) 50vw, 33vw"
                   style={{
                     width: '100%',
                     height: '100%',
