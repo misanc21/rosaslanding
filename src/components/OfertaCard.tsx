@@ -3,7 +3,7 @@ import AnimatedLink from './motion/AnimatedLink';
 import { useTransform, useScroll, motion, MotionValue } from 'motion/react';
 import { useRef } from "react";
 
-interface OfertaCardProps {
+export interface OfertaCardProps {
   i: number;
   id: string;
   title: string;
@@ -50,8 +50,12 @@ export const OfertaCard = ({
   return (
     <div ref={container} className={`card-container h-[100vh] flex justify-center items-center sticky top-40 font-raleway`}>
       <motion.div
-        className={`card w-[320px] lg:w-[1000px] h-[550px] lg:h-[500px] relative top-0 rounded-2xl ${colorClasses[color]}`}
-        style={{ top: `calc(-15% + ${i * 26}px)`, scale: cardScale }}
+        className={`z-50 card w-[320px] lg:w-[1000px] h-[550px] lg:h-[500px] relative top-0 rounded-2xl ${colorClasses[color]}`}
+        style={{ top: `calc(-15% + ${i * 60}px)`, scale: cardScale }}
+        initial={{ opacity: 1, y: 50, scale: 0.2 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+
       >
         <motion.div className="flex flex-col justify-around items-center text-slate-100 font-bold h-full">
           <div className={`text-3xl lg:text-5xl mx-3 mt-3 flex justify-center flex-shrink-0 ${bgcolor} max-w-[88%] lg:max-w-[97%] w-full rounded-md shadow-md`}>

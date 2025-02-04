@@ -1,4 +1,4 @@
-interface OfertaCardProps {
+export interface OfertaCardProps {
   id: string;
   title: string;
   description: string;
