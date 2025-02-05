@@ -39,7 +39,7 @@ export const OfertaEducativa = () => {
     });
   }
   return (
-    <div className="w-full h-auto mt-[15vh] mb-[100vh] flex justify-center flex-col items-center">
+    <div className="w-full h-auto mt-[15vh] flex justify-center flex-col items-center">
       <motion.h2
         style={{
           opacity,
