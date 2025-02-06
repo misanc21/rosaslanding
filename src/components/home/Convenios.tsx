@@ -14,7 +14,7 @@ export const Convenios = () => {
         progress={[0, 0.1, 0.8, 0.95]}
         range={[0, 1, 1, 0]}
       >
-        <div className="text-4xl lg:text-7xl text-blue-950 font-bold mb-8 lg:mb-16 text-center">Nuestros convenios</div>
+        <div className="text-4xl lg:text-7xl text-blue-950 font-bold mb-4 lg:mb-8 text-left">Nuestros convenios</div>
         <Paragraph value={"En nuestra búsqueda constante por brindar mayores oportunidades a nuestros estudiantes, hemos establecido convenios estratégicos ofreciéndoles acceso a beneficios exclusivos, programas académicos de alto nivel y un camino sólido para su futuro educativo."} />
         <motion.div
           className="flex flex-col lg:flex-row gap-10 justify-center items-center my-10 lg:my-32"
