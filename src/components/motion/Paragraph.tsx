@@ -17,7 +17,7 @@ export default function Paragraph({ value }: ParagraphProps) {
   const words = value.split(" ");
   return (
     <motion.p
-      className="flex text-balance lg:text-2xl max-w-[1200px] flex-wrap items-center justify-start leading-relaxed drop-shadow-md"
+      className="flex text-balance lg:text-base max-w-[1200px] flex-wrap items-center justify-center lg:justify-start leading-relaxed"
       ref={element}
       style={{ opacity: scrollYProgress, lineHeight: 1 }}
     >
