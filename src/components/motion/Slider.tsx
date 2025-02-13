@@ -16,7 +16,7 @@ export const Slider = () => {
   return (
     <div className="container flex justify-center items-center w-[90vw] lg:w-[50vw]">
       <motion.div
-        className="slider flex overflow-hidden w-full rounded-md"
+        className="slider flex overflow-hidden rounded-md w-auto"
         ref={slider_wrapper}
         whileTap={{ cursor: "grabbing" }}
       >

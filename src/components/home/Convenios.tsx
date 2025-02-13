@@ -11,7 +11,7 @@ export const Convenios = () => {
       <h2 className='text-center lg:text-left text-3xl md:text-5xl lg:text-4xl font-raleway font-bold text-blue-950 my-5'>
         Nuestros convenios
       </h2>
-      <span className="text-balance lg:text-base max-w-[1200px] flex-wrap items-center justify-center lg:justify-start leading-relaxed text-blue-950">
+      <span className="text-center lg:text-left lg:text-base max-w-[1200px] leading-relaxed text-blue-950">
         En nuestra búsqueda constante por brindar mayores oportunidades a nuestros estudiantes, hemos establecido convenios estratégicos ofreciéndoles acceso a beneficios exclusivos, programas académicos de alto nivel y un camino sólido para su futuro educativo.
       </span>
       <motion.div

@@ -12,7 +12,7 @@ export const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const newOpacity = scrollY > 50 ? 'bg-opacity-90' : '';
+      const newOpacity = scrollY > 50 ? 'bg-opacity-80' : '';
       setOpacity(newOpacity);
     }
 
